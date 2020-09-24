@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{title}}</title>
+    <style>
+      body {
+        background: #f2f3f5;
+      }
+
+      .wrapper {
+        width: 60%;
+        margin: 0 auto;
+        display: block;
+        font-family: cursive;
+      }
+
+      .wrapper .title {
+        width: calc(100% - 60px);
+        padding: 20px 30px;
+        background: #d11f07;
+        color: white;
+        font-size: 20px;
+        margin-top: 20px;
+      }
+
+      .wrapper .details {
+        width: 100%;
+        padding: 20 30px;
+        background: white;
+        font-size: 16px;
+        overflow-y: scroll;
+        margin-top: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="title">{{title}}</div>
+      <div class="details">
+        <pre>
+          {{details}}
+        </pre>
+      </div>
+    </div>
+  </body>
+</html>
